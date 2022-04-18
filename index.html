@@ -6,87 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="CV, curriculum vitae, developer, engineer">
     <meta name="description" content="This is CV of Junior Software Developer">
+    <link rel="stylesheet" href="styles.css">
     <title>Julia</title>
 </head>
 <body>
 
-<img src="avatar.jpg" alt="Julia Vykhor" width="200"> 
+        <div class="container">
 
-<h1>Julia Vykhor</h1>
-<h2>Junior Software Developer</h2>
-<p>I've just started my way to  the Software Development Field. I've got a long professional experience in <strong> Legal and Teaching foreign languages Areas </strong></p>
+    <div class="info">
 
-<p>I like travelling, meeting new people and studying foreign languages. <em> I'm fluent in English and French and can speak Polish.</em> </p>
+        <img src="avatar.jpg" alt="Julia Vykhor" class="avatar"> 
+        <div class="info-text">
 
-<h4>Social networks:</h4>
-<a href="https://www.linkedin.com/in/julia-vykhor-9bb59b35/" target="_blank">LinkedIn</a>
-|
-<a href="https://www.facebook.com/julia.vuhor" target="_blank">Facebook</a>
+            <h1>Julia Vykhor</h1>
+            <h2>Junior Software Developer</h2>
+            <p>I've just started my way to  the Software Development Field. I've got a long professional experience in <strong> Legal and Teaching foreign languages Areas </strong></p>
 
-<h2>My hobbies</h2>
+            <p>I like travelling, meeting new people and studying foreign languages. <em> I'm fluent in English and French and can speak Polish.</em> </p>
 
-<ol>
-<li>Travelling</li>
-<li>Sport</li>
-<li>Reading</li>
-<li>Cooking</li>
-<li>Feng-shui</li>
+            <h4>Social networks:</h4>
+            <a href="https://www.linkedin.com/in/julia-vykhor-9bb59b35/" target="_blank">LinkedIn</a>
+            |
+            <a href="https://www.facebook.com/julia.vuhor" target="_blank">Facebook</a>
+        </div>
+    </div>
 
-</ol>
+    <div class="card bg-green">
+        <h2>My hobbies</h2>
 
-<h2>Experience</h2>
-<table>
-    <thead>
-        <tr>
-            <th>Job title</th>
-            <th>Company</th>
-            <th>Year</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Customs Officer</td>
-            <td>Donetsk customs</td>
-            <td>2008 - 2011</td>
-        </tr>
-        <tr>
-            <td>Lawyer</td>
-            <td>Legal agency Apriory, Art-Stroy2012 Ltd</td>
-            <td>2011 - 2019</td>
-        </tr>
-        <tr>
-            <td>Online English Teacher</td>
-            <td>SkyEng</td>
-            <td>2018 - present</td>
-        </tr>
-        <tr>
-            <td>AV Webmaster</td>
-            <td>Junior Frontend Developer</td>
-            <td>2022 - present</td>
-        </tr>
-    </tbody>
-</table>
+        <ol class="list">
+        <li>Travelling</li>
+        <li>Sport</li>
+        <li>Reading</li>
+        <li>Cooking</li>
+        <li>Feng-shui</li>
 
-<h2>Contact me</h2>
+        </ol>
+    </div>
 
-<form action="">
-<div>
-    <label for="name">Your name:</label>
-    <input type="text" id="name" placeholder="Type your name">
+    <div class="card bg-red">
+        <h2>Experience</h2>
+        <table class="table">
+            <thead>
+                <!-- <tr>
+                    <th>Job title</th>
+                    <th>Company</th>
+                    <th>Year</th>
+                </tr> -->
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Customs Officer</td>
+                    <td>Donetsk customs</td>
+                    <td>2008 - 2011</td>
+                </tr>
+                <tr>
+                    <td>Lawyer</td>
+                    <td>Legal agency Apriory, Art-Stroy2012 Ltd</td>
+                    <td>2011 - 2019</td>
+                </tr>
+                <tr>
+                    <td>Online English Teacher</td>
+                    <td>SkyEng</td>
+                    <td>2018 - present</td>
+                </tr>
+                <tr>
+                    <td>AV Webmaster</td>
+                    <td>Junior Frontend Developer</td>
+                    <td>2022 - present</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <form action="/" class="form">
+        <h2>Contact me</h2>
+        
+ <div class="form-row">
+    <div class="form-group">
+        <label for="name">Your name:</label>
+        <input type="text" id="name" placeholder="Type your name">
+    </div>
+
+    <div class="form-group">
+        <label for="email">Your e-mail:</label>
+        <input type="email" id="email" placeholder="Type your e-mail">
+    </div>
 </div>
 
-<div>
-    <label for="email">Your e-mail:</label>
-    <input type="email" id="email" placeholder="Type your e-mail">
-</div>
+    <div class="form-group">
+        <label for="message">Your message:</label>
+        <textarea id="message" cols="20" rows="5" placeholder="Type your message"></textarea>
+    </div>
+    <input class="btn" type="submit" value="Send">
+    </form>
 
-<div>
-    <label for="message">Your message:</label>
-    <br>
-    <textarea id="message" cols="20" rows="5" placeholder="Type your message"></textarea>
 </div>
-<input type="submit" value="Send">
-</form>
-
 </body>
 </html>
